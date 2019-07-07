@@ -48,23 +48,28 @@
             padding-top: .8em;
             padding-bottom: .3em;
         }
-        h2::before {
-            content: "#";
+        h1::before,
+        h2::before,
+        h3::before,
+        h4::before {
             margin-right: 5px;
-            color: $light-post-link-color;
+            color: #b3b3b3;
+            font-size: 14px;
             .dark-theme & {
                 color: $dark-post-link-color;
             }
         }
-
+        h1::before {
+            content: "H₁";
+        }
+        h2::before {
+            content: "H₂";
+        }
         h3::before {
-            content: "|";
-            margin-right: 5px;
-            color: $light-post-link-color;
-
-            .dark-theme & {
-                color: $dark-post-link-color;
-            }
+            content: "H₃";
+        }
+        h4::before {
+            content: "H₄";
         }
 
         a {
@@ -96,7 +101,7 @@
             padding: 5px 5px;
             background: #fff;
             border: 1px solid #ddd;
-            box-shadow: 1px 1px 0 #fff, 2px 2px 0 #ddd;
+            // box-shadow: 1px 1px 0 #fff, 2px 2px 0 #ddd;
             margin-left: 3px;
             margin-right: 3px;
 
@@ -237,5 +242,19 @@
 
     .post-comment{
         padding: 3em 0;
+    }
+
+    .linenums {
+        code:not([class]) {
+            padding: 0;
+            background: transparent;
+            border: none;
+            margin: 0;
+
+            .dark-theme &:not([class]) {
+                background: transparent;
+                box-shadow: none;
+            }
+        }
     }
 }
