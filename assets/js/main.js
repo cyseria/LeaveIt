@@ -22,7 +22,7 @@ jQuery(function($) {
     _Blog.changeTitle = function() {
         var currentTitle = document.title;
         window.onblur = function() {
-            document.title = '（＞﹏＜）!';
+            document.title = 'YAHAHA!~';
         }
         window.onfocus = function() {
             document.title = currentTitle;
