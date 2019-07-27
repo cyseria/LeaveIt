@@ -174,10 +174,18 @@
         font-size: 1em;
     }
 
+    pre {
+        margin-left: 22px;
+    }
     ul,
     ol,
     p {
         padding-left: 22px;
+    }
+    ul, ol {
+        pre {
+            margin-left: 0;
+        }
     }
 
     li > p, 
