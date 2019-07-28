@@ -1,10 +1,11 @@
 LeaveIt Hugo Theme
 ========================
 
-changes：
+# changes：
 * change theme color(refer from bear), and title style
 * add progress bar
 * add count number, and read time
+* add side toc
 
 -------
 

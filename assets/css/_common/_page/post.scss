@@ -24,14 +24,16 @@
 
         a {
             color: $light-post-link-color;
+            transition: border.1s linear;
             .dark-theme & {
                 color: $dark-post-link-color;
             }
 
             &:hover {
-                color: $light-post-link-hover-color;
+                border-bottom: 2px solid;
+                // color: $light-post-link-hover-color;
                 .dark-theme & {
-                    color: $dark-post-link-hover-color;
+                    // color: $dark-post-link-hover-color;
                 }
             }
         }
@@ -74,17 +76,18 @@
 
         a {
             color: $light-post-link-color;
+            transition: border.1s linear;
             .dark-theme & {
                 color: $dark-post-link-color;
             }
         }
 
         a:hover {
-            color: $light-post-link-hover-color;
+            border-bottom: 2px solid;
             .dark-theme &:hover {
-                color: $dark-post-link-hover-color;
-                text-decoration: underline;
-                font-weight: bold;
+                border-bottom: 2px solid;
+                // text-decoration: underline;
+                // font-weight: bold;
             }
         }
 
@@ -103,11 +106,12 @@
             margin-left: 3px;
             padding: 5px 5px;
             border: 1px solid #ddd;
+            border-radius: 1px;
             background: #fff;
 
             .dark-theme &:not([class]) {
                 background: transparent;
-                box-shadow: 1px 1px 0 $dark-font-secondary-color, 2px 2px 0 $dark-font-secondary-color;
+                // box-shadow: 1px 1px 0 $dark-font-secondary-color, 2px 2px 0 $dark-font-secondary-color;
             }
         }
 
