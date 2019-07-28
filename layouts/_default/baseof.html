@@ -5,6 +5,12 @@
   <body class="">
     <div class="wrapper">
         {{ partial "header" . }}
+        <!-- live2d -->
+        <div id="landlord">
+          <div class="message" style="opacity:0"></div>
+          <canvas id="live2d" width="280" height="250" class="live2d"></canvas>
+          <div class="hide-button">隐藏</div>
+       </div>
     	 <main class="main">
           <div class="container">
       		{{ block "content" . }}{{ end }}
@@ -12,5 +18,6 @@
 		   </main>
       {{ partial "footer.html" . }}
      </div>
+  
   </body>
 </html>

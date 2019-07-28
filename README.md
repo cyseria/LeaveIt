@@ -6,6 +6,7 @@ LeaveIt Hugo Theme
 * add progress bar
 * add count number, and read time
 * add side toc
+* live2d (need config model at /static/live2d/*)
 
 -------
 
