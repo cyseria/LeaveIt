@@ -1,6 +1,13 @@
 LeaveIt Hugo Theme
 ========================
 
+changes：
+* change theme color(refer from bear), and title style
+* add progress bar
+* add count number, and read time
+
+-------
+
 LeaveIt is a clean, elegant, simple but not simpler blog theme for Hugo. 
 
 ![hugo-theme-LeaveIt](https://raw.githubusercontent.com/liuzc/LeaveIt/master/images/screenshot.png)

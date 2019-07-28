@@ -1,4 +1,7 @@
 <nav class="navbar">
+    {{ if (and .IsPage (not .Params.notsb)) }}
+        <div class="top-scroll-bar"></div>
+    {{ end }}
     <div class="container">
         <div class="navbar-header header-logo">
         	<a href="javascript:void(0);" class="theme-switch"><i class="iconfont icon-xihuan"></i></a>&nbsp;<a href="{{ .Site.BaseURL }}">{{ .Site.Title }}</a>
@@ -12,6 +15,9 @@
     </div>
 </nav>
 <nav class="navbar-mobile" id="nav-mobile" style="display: none">
+    {{ if (and .IsPage (not .Params.notsb)) }}
+        <div class="top-scroll-bar"></div>
+    {{ end }}
      <div class="container">
         <div class="navbar-header">
             <div>  <a href="javascript:void(0);" class="theme-switch"><i class="iconfont icon-xihuan"></i></a>&nbsp;<a href="{{.Site.BaseURL}}">{{ .Site.Title }}</a></div>

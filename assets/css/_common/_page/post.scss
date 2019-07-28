@@ -177,9 +177,7 @@
     pre {
         margin-left: 22px;
     }
-    ul,
-    ol,
-    p {
+    ul, ol, p {
         padding-left: 22px;
     }
     ul, ol {
@@ -187,6 +185,16 @@
             margin-left: 0;
         }
     }
+    // ul > li {
+    //     list-style-type: none;
+    //     &:before {
+    //         position: absolute;
+    //         left: 13px;
+    //         color: $theme-color;
+    //         content: '•';
+    //         font-size: 20px;
+    //     }
+    // }
 
     li > p, 
     blockquote > p {
