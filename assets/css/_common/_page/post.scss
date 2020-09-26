@@ -155,8 +155,9 @@
             display: block;
             overflow: hidden;
             margin: 0 auto;
-            max-width: 80%;
+            max-width: 90%;
             height: auto;
+            box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
         }
 
      
@@ -181,8 +182,11 @@
     pre {
         margin-left: 22px;
     }
-    ul, ol, p {
+    p {
         padding-left: 22px;
+    }
+    ul, ol {
+        padding-left: 40px;
     }
     ul, ol {
         pre {
